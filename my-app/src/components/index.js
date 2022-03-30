@@ -5,9 +5,10 @@ import Home from "./home";
 import Nav from "./nav";
 
 export default function Spa() {
+	const [user, setUser] = useState("");
 	return (
 		<HashRouter>
-			<UserContext.Provider>
+			<UserContext.Provider value={user}>
 				<Nav />
 				<Routes>
 					<Route path="/" element={<Home />} />

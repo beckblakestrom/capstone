@@ -1,0 +1,38 @@
+.full-page-banner {
+	position: relative;
+	height: 100vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.banner-image {
+	width: 60%;
+	object-fit: cover;
+}
+
+.banner-text {
+	color: $color-light;
+	background-color: $color-purpleblue;
+	padding: 2rem;
+	font-size: 6rem;
+	position: absolute;
+	right: 5%;
+	bottom: 5%;
+	width: 33%;
+
+	letter-spacing: 1rem;
+	@include reross;
+}
+
+.banner-text-sub {
+	color: $color-purpleblue;
+	background-color: $color-yellow;
+	padding: 2rem;
+	font-size: 6rem;
+	position: absolute;
+	top: 10%;
+	@include reross;
+	letter-spacing: 2rem;
+}
